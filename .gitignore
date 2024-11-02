@@ -1,0 +1,19 @@
+# Virtual environment
+ll_env/
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# SQLite database files
+*.sqlite3
+
+# Log files
+*.log
+
+# Media files
+media/
+
+# PyCharm project files
+.idea/

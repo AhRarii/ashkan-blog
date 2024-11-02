@@ -1,0 +1,22 @@
+{% extends "blogs/base.html" %}
+
+{% block header %}
+<div class="jumbotron text-center">
+    <h1>Latest Posts</h1>
+</div>
+{% endblock header %}
+
+{% block content %}
+{% for blog in blogs %}
+    <div class="card mb-3">
+        <div class="card-header">
+            <h3>{{ blog.title }}</h3>
+            <div class="card-body">
+                {{ blog.text|linebreaks }}
+            </div>
+        </div>
+    </div>
+{% empty %}
+<p>There are no entries for this topic yet.</p>
+{% endfor%}
+{% endblock content %}
